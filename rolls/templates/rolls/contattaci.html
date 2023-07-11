@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Fullstack Sushi</title>
+</head>
+
+<body>
+    <!-- Image and text -->
+    <nav class="navbar navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a  class="navbar-brand" href="{%url 'home'%}">
+                {% load static%}
+                <img src="{% static 'rolls/logo.png'%}" alt="" width="30" height="24" class="d-inline-block align-top">
+                Fullstack Sushi
+            </a>
+            <a type="button" class="btn btn-secondary" href="/admin">Amministrazione</a>
+        </div>
+    </nav>
+<h2><center>Ciao</center></h2>
+<h4><center>  <br>Per contattarci puoi chiamare al: 3333333333 <br>Oppure compilare il form qui sotto!</center></h4>
+<div class="container">
+    <div class="mb-3">
+        <label for="exampleFormControlInput1" class="form-label">Indirizzo Email</label>
+        <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+      </div>
+      <div class="mb-3">
+        <label for="exampleFormControlTextarea1" class="form-label">Chiedici ciò che vuoi</label>
+        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+      </div>
+      <a type="button" class="btn btn-secondary" href="#">Invia</a>
+</div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0"
+        crossorigin="anonymous"></script>
+
+<br>
+<br>
+<br>
+<br>
+        
+</body>
+
+<footer class="section footer-classic context-dark bg-image" style="background: #a0a8af;">
+    <div class="container">
+      <div class="row row-30">
+        <div class="col-md-4 col-xl-5">
+          <div class="pr-xl-4">
+            <p>Facciamo sushi, lo facciamo bene</p>
+            <!-- Rights-->
+            <p class="rights"><span>©  </span><span class="copyright-year">2023</span><span> </span><span>Fullstack Sushi</span><span> - </span><span>Tutti i diritti riservati.</span></p>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <h5>Contattaci</h5>
+          <dl class="contact-list">
+            <dt>Indirizzo:</dt>
+            <dd>798 South Park Avenue, New York, USA</dd>
+          </dl>
+          <dl class="contact-list">
+            <dt>email:</dt>
+            <dd><a href="mailto:#">compagny@email.com</a></dd>
+          </dl>
+          <dl class="contact-list">
+            <dt>Telefono:</dt>
+            <dd><a href="tel:#">1.555.652.258</a> <span>o</span> <a href="tel:#">1.55.652.268</a>
+            </dd>
+          </dl>
+        </div>
+        <div class="col-md-4 col-xl-3">
+          <h5>I Nostri Link</h5>
+          <ul class="nav-list">
+            <li><a href="#">Facebook</a></li>
+            <li><a href="#">Instagram</a></li>
+        
+          </ul>
+        </div>
+      </div>
+    </div>
+  </footer>
+</html>
